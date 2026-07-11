@@ -1,0 +1,1122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:#050505;
+    color:white;
+    font-family:Arial,sans-serif;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+    text-align:center;
+    padding:30px;
+    background:#000;
+
+}
+
+
+header h1{
+
+    font-family:'Orbitron',sans-serif;
+    font-size:35px;
+    letter-spacing:5px;
+
+}
+
+
+header p{
+
+    color:#999;
+
+}
+
+
+
+
+/* HERO */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:url("images/house.jpg") center/cover no-repeat;
+
+}
+
+
+
+.rain{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+    110deg,
+
+    transparent,
+
+    transparent 12px,
+
+    rgba(255,255,255,0.15) 13px
+
+    );
+
+
+    opacity:.25;
+
+}
+
+
+
+.dark-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+}
+
+
+
+.content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.content h3{
+
+    font-family:'Orbitron',sans-serif;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.content h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:60px;
+
+    margin:20px 0;
+
+}
+
+
+
+.content p{
+
+    color:#ccc;
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+/* BUTTONS */
+
+
+.buttons button{
+
+    padding:15px 35px;
+
+    margin:10px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-family:'Orbitron',sans-serif;
+
+    transition:.3s;
+
+}
+
+
+
+.trailer{
+
+    background:#900000;
+
+    color:white;
+
+    border:1px solid red;
+
+}
+
+
+
+.buy{
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #555;
+
+}
+
+
+
+.trailer:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 20px red;
+
+}
+
+
+
+.buy:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 20px white;
+
+}
+
+
+
+
+
+/* SECTIONS */
+
+
+.story,
+.features,
+.status,
+.studio,
+.developer,
+.faq,
+.credits,
+.trailer-section{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+
+
+h2{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:32px;
+
+    letter-spacing:4px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+/* CARDS */
+
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    width:260px;
+
+    background:#101010;
+
+    padding:25px;
+
+    border:1px solid #333;
+
+    border-radius:10px;
+
+}
+
+
+
+.card h3{
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+
+/* BOXES */
+
+
+.status-box,
+.studio-box,
+.developer-box,
+.faq-box,
+.credit-box{
+
+    max-width:750px;
+
+    margin:auto;
+
+    background:#0b0b0b;
+
+    padding:40px;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+}
+
+
+
+.status-box h3,
+.studio-box h3,
+.developer-box h3{
+
+    font-family:'Cinzel',serif;
+
+    font-size:24px;
+
+}
+
+
+
+.status-box p,
+.studio-box p,
+.developer-box p,
+.faq-box p,
+.credit-box p{
+
+    font-family:'Orbitron',sans-serif;
+
+    color:#aaa;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+
+
+
+/* TRAILER */
+
+
+.trailer-box{
+
+    height:300px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:#111;
+
+    border:1px solid #333;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+}
+.play-button{
+
+    font-size:70px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* LOADING SCREEN */
+
+
+.loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:black;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:9999;
+
+}
+
+
+
+.loading-screen h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    letter-spacing:6px;
+
+    font-size:40px;
+
+}
+
+
+
+.loading-screen h2{
+
+    font-family:'Cinzel',serif;
+
+}
+
+
+
+.loading-text{
+
+    margin-top:30px;
+
+    color:#aaa;
+
+    animation:blink 1s infinite;
+
+}
+
+
+
+@keyframes blink{
+
+    50%{
+
+        opacity:.3;
+
+    }
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#000;
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#777;
+
+}/* GLOWING ANIMATIONS */
+
+
+/* BUTTON GLOW */
+
+.trailer,
+.buy,
+.trailer-buttons button{
+
+    transition:0.3s ease;
+
+}
+
+
+
+.trailer:hover,
+.trailer-buttons button:hover{
+
+    box-shadow:
+    0 0 10px red,
+    0 0 30px red;
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+
+.buy:hover{
+
+    box-shadow:
+    0 0 10px white,
+    0 0 25px white;
+
+}
+
+
+
+
+
+/* CARD EFFECT */
+
+
+.card,
+.status-box,
+.studio-box,
+.developer-box,
+.faq-box,
+.credit-box{
+
+    transition:0.4s ease;
+
+}
+.card:hover,
+.status-box:hover,
+.studio-box:hover,
+.developer-box:hover,
+.faq-box:hover,
+.credit-box:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#900000;
+
+    box-shadow:
+    0 0 15px rgba(255,0,0,0.5);
+
+
+
+
+
+
+/* TRAILER PLAY BUTTON */
+
+
+.play-circle,
+.play-icon{
+
+    animation:pulse 2s infinite;
+
+}
+
+
+
+@keyframes pulse{
+
+
+    0%{
+
+        box-shadow:0 0 0 red;
+
+    }
+
+
+    50%{
+
+        box-shadow:0 0 30px red;
+
+    }
+
+
+    100%{
+
+        box-shadow:0 0 0 red;
+
+    }
+
+}
+
+
+
+
+
+/* TITLE EFFECT */
+
+
+.content h1,
+.ultimate-content h1{
+
+    animation:titleGlow 3s infinite;
+
+}
+
+
+
+@keyframes titleGlow{
+
+
+    0%{
+
+        text-shadow:0 0 5px black;
+
+    }
+
+
+    50%{
+
+        text-shadow:0 0 20px red;
+
+    }
+
+
+    100%{
+
+        text-shadow:0 0 5px black;
+
+    }
+
+}/* CINEMATIC FADE IN */
+
+
+.content{
+
+    animation:fadeHero 1.5s ease forwards;
+
+}
+
+
+
+.game-info-bar{
+
+    animation:slideUp 1.8s ease forwards;
+
+}
+
+
+
+.buttons{
+
+    animation:slideUp 2.2s ease forwards;
+
+}
+
+
+
+@keyframes fadeHero{
+
+
+from{
+
+    opacity:0;
+
+}
+
+
+to{
+
+    opacity:1;
+
+}
+
+
+}
+
+
+
+@keyframes slideUp{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}/* HORROR FOG EFFECT */
+
+
+.fog{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+    circle,
+    rgba(255,255,255,0.08),
+    transparent 60%
+    );
+
+
+    animation:fogMove 12s infinite alternate;
+
+    z-index:1;
+
+}
+
+
+
+@keyframes fogMove{
+
+
+from{
+
+    transform:scale(1);
+
+    opacity:.3;
+
+}
+
+
+
+to{
+
+    transform:scale(1.2);
+
+    opacity:.6;
+
+}
+
+
+}/* SCREENSHOT GALLERY */
+
+.screenshots{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.gallery-text{
+
+    color:#aaa;
+
+    margin-bottom:40px;
+
+    font-size:18px;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.shot{
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    border:2px solid #333;
+
+    transition:.4s;
+
+    background:#111;
+
+}
+
+.shot img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.shot:hover{
+
+    border-color:#990000;
+
+    box-shadow:0 0 25px rgba(255,0,0,.5);
+
+}
+
+.shot:hover img{
+
+    transform:scale(1.05);
+
+}/* SYSTEM REQUIREMENTS */
+
+.requirements{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.requirements-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.req-box{
+
+    width:380px;
+
+    background:#101010;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    transition:.3s;
+
+    text-align:left;
+
+}
+
+.req-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#990000;
+
+    box-shadow:0 0 20px rgba(255,0,0,.35);
+
+}
+
+.req-box h3{
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+.req-box p{
+
+    margin:12px 0;
+
+    color:#ccc;
+
+}/* ===========================
+      COMMUNITY SECTION
+=========================== */
+
+.community{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.community h2{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:40px;
+
+    letter-spacing:5px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px red,
+    0 0 25px rgba(255,0,0,.5);
+
+}
+
+
+
+.community-text{
+
+    max-width:850px;
+
+    margin:25px auto 60px;
+
+    color:#bfbfbf;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+.community-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+.community-card{
+
+    background:rgba(15,15,15,.92);
+
+    border:1px solid #333;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.4s;
+
+}
+
+
+
+.community-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#b00000;
+
+    box-shadow:
+
+        0 0 20px rgba(255,0,0,.4),
+
+        0 0 45px rgba(255,0,0,.15);
+
+}.community-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+
+
+
+
+.community-card h3{
+
+    font-family:'Cinzel',serif;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.community-card p{
+
+    font-family:'Orbitron',sans-serif;
+
+    color:#cfcfcf;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}/* ===========================
+         FOOTER V2
+=========================== */
+
+.footer{
+
+    background:#050505;
+
+    border-top:1px solid #222;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.footer-logo h2{
+
+    font-family:'Orbitron',sans-serif;
+
+    letter-spacing:5px;
+
+    font-size:34px;
+
+    color:white;
+
+    text-shadow:
+
+    0 0 10px red,
+
+    0 0 25px rgba(255,0,0,.4);
+
+}
+
+
+
+.footer-logo p{
+
+    color:#999;
+
+    margin-top:10px;
+
+    font-size:16px;
+
+}
+
+
+
+.footer-links{
+
+    margin:40px 0;
+
+}
+
+
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    margin:0 18px;
+
+    font-family:'Orbitron',sans-serif;
+
+    transition:.3s;
+
+}
+
+
+
+.footer-links a:hover{
+
+    color:#ff3b3b;
+
+    text-shadow:
+
+    0 0 10px red;
+
+}
+
+
+
+.footer-info{
+
+    color:#777;
+
+    line-height:1.8;
+
+    font-size:14px;
+
+}.community-icon img{
+
+    width:65px;
+    height:65px;
+    object-fit:contain;
